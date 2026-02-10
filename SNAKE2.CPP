@@ -1,7 +1,9 @@
 #include"n3.h"
+#include <stdio.h>
 int width =640;
 int height =480;
 int snakeLength=5;
+int score = 0;
 int snakeX[100], snakeY[100];
 int foodX, foodY;
 char direction;
@@ -17,6 +19,9 @@ void setup(){
 
   void draw(){
    cleardevice();
+char scoreText[20];
+sprintf(scoreText, "Score: %d", score);
+outtextxy(10, 10, scoreText);
 
 for(int i = 0; i< snakeLength; i++){
      setcolor(WHITE);
@@ -64,6 +69,7 @@ prevY = prev2Y;
 }
 if(snakeX[0] == foodX && snakeY[0] == foodY){
 snakeLength++;
+score++;
 foodX = (rand() % (width / 10))*10;
 foodY = (rand() % (height / 10))*10;
 }
