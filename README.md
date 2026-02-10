@@ -33,5 +33,5 @@ Example: C:\TURBOC3\BIN\snakegame.cpp
 📬 Author
  Selamawit  Mekbib
 Computer Science Undergraduate (Unity University)
-GitHub: selam-ech
+GitHub: Selam-Tech
 
